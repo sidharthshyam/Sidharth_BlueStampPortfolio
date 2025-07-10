@@ -53,7 +53,9 @@ I achieved my first milestone by setting up remote access from my computer to th
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
-![Milestone Diagram](C:\Users\sidha\Pictures\Initial Lunar Lander FlowChart.drawio.png)
+This diagram shows the structure of my Lunar Lander reinforcement learning setup using Raspberry Pi and VS Code:
+
+![Milestone 1 Diagram](images/milestone1.png)
 
 
 # Code

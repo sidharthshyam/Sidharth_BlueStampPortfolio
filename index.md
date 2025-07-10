@@ -47,11 +47,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+I achieved my first milestone by setting up remote access from my computer to the Raspberry Pi using Raspberry Pi Imager and a USB card reader, allowing me to SSH into the Pi and begin development. After establishing the SSH connection, I created a virtual environment to manage dependencies cleanly, and organized the necessary folders and Python files for the project. A key part of this milestone was gaining a solid understanding of the codebase—specifically, the purpose of each import, how the LunarLander-v3 game environment is initialized, and how the neural network and training loop are structured using the DQN algorithm. Once I grasped these core components, I ensured that the video recording functionality for the lunar lander simulation and the training progress graph both worked correctly. Although the initial model was not fully optimized and the lander frequently crashed, this step confirmed that the full training pipeline was functional and ready for further improvement.
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 

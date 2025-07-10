@@ -55,7 +55,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 This diagram shows the structure of my Lunar Lander reinforcement learning setup using Raspberry Pi and VS Code:
 
-![Milestone 1 Diagram](Initial Lunar Lander FlowChart.drawio.png)
+![Milestone 1 Diagram]("Initial Lunar Lander FlowChart.drawio.png")
 
 
 # Code

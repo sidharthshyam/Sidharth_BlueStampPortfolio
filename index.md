@@ -37,9 +37,11 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 During this milestone, I focused on optimizing the DQN model to achieve the best possible performance. Initially, I attempted this manually—adjusting hyperparameters like learning rate and exploration decay, then retraining the model with each change. However, I quickly realized this approach was time-consuming and inefficient.
 
-To streamline the process, I developed an automated Python script (hyperparameter_tuning.py) that systematically explores combinations of key hyperparameters: learning rate, exploration fraction, and neural network architecture. Each configuration was first trained for 20,000 steps, allowing me to identify and eliminate weak performers early on. I then reran the most promising configurations for 100,000 steps to fully evaluate their potential.
+To streamline the process, I developed an automated Python script (hyperparameter_tuning.py) that automatically loops through combinations of key hyperparameters: learning rate, exploration fraction, and neural network architecture. Each configuration was first trained for 20,000 steps, allowing me to identify and eliminate weak performers early on. I then reran the most promising configurations for 100,000 steps to fully evaluate their potential.
 
-After each run, the script parsed the monitor.csv log, calculated the mean episode reward and length, and saved the results to a master CSV file. To visualize performance trends, it also generated a heatmap of mean reward across learning rate and exploration fraction values—providing a clear and intuitive view of which hyperparameter regions yielded the best learning outcomes.
+After each run, the script parsed the monitor.csv log, calculated the mean episode reward and length, and saved the results of each configuration to a master CSV file. To visualize performance trends, the code also generates a heatmap of mean reward across learning rate and exploration fraction values, which provided a clear, visual view of which hyperparameter regions yielded the best learning outcomes.
+
+# Schematics
 
 
 

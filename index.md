@@ -41,7 +41,7 @@ To streamline the process, I developed an automated Python script (hyperparamete
 
 After each run, the script parsed the monitor.csv log, calculated the mean episode reward and length, and saved the results of each configuration to a master CSV file. To visualize performance trends, the code also generates a heatmap of mean reward across learning rate and exploration fraction values, which provided a clear, visual view of which hyperparameter regions yielded the best learning outcomes.
 
-# Schematics
+# Tables and Diagrams
 ![Milestone 2 Diagram](Lunar%20Lander%20Mean%20Reward%20Heatmap.png)
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
@@ -50,7 +50,7 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone
 
-# Code
+# Milestone 2 Code
 Here's the code for the hyperparameter_tuning.py file.
 ```
 #!/usr/bin/env python3
@@ -67,8 +67,8 @@ from stable_baselines3.common.callbacks import EvalCallback
 from stable_baselines3.common.monitor import Monitor
 
 # 1) Hyperparameter grid
-learning_rates      = [0.001]
-exploration_fracs   = [0.5, 0.3]
+learning_rates      = [0.001, 0.005, 0.0005]
+exploration_fracs   = [0.5, 0.3, 0.7]
 nn_layer_configs    = [ [128,128], [64,64,64], [64,64]]
 
 # 2) Paths
@@ -176,7 +176,7 @@ This diagram shows the structure of my Lunar Lander reinforcement learning setup
 
 
 
-# Code
+# Milestone 1 Code
 Here's the code for the intial Lunar Lander without too much optimization. 
 ```
 # Imports

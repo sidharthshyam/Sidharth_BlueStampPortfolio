@@ -21,13 +21,19 @@ You should comment out all portions of your portfolio that you have not complete
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ud03IRiQ_f0?si=0etjGS8OP72odx-D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+For Milestone 3, I enhanced the Lunar Lander project by creating a Mars-like environment, implementing human vs AI functionality, and adding interactive sliders for gravity and wind power. The Mars environment was developed by copying and modifying the original Lunar Lander code from Gymnasium's Box2D module into mars_lander.py. I removed the gravity assertion to allow Mars' weaker value of -3.71 m/s², enabled wind with moderate power (10.0) and turbulence (1.0) for dust storms, and adjusted rendering for reddish-orange terrain colors using Pygame RGB tuples like (180, 80, 40) for the ground fill and moon edges. These changes make the environment more realistic, with slower falls and drifting due to low gravity/wind, registered as 'MarsLander-v0' for easy use.
 
+The human vs AI feature was added in human_vs_ai.py, running two parallel environments: one for AI using the a previously trained DQN model to predict actions, and one for human input via Pygame keys (left/right arrows for side engines, space for main thrust). Rewards are calculated separately, with human control in a Pygame window and AI in background; at the end, scores are compared to declare a winner. For sliders, mars_lander_sliders.py uses Matplotlib widgets to create an interactive GUI(Graphical User Interface) with gravity (-12 to 0) and wind (0 to 20) sliders, a Train button to retrain/evaluate DQN on new params (10k steps initial, 50k on button press), and a reward curve plot and mean reward text that updates after the user changes the gravity and wind power. Videos of the Lander with these changes should also be saved. This allows for users to explore different parameters and makes the project more engaging. 
 
+My biggest triumphs and challenges at BSE: My biggest challenges with this project were optimizaing the DQN Model to perform well consistently in the Lunar Lander Environment and creating the Mars-like environment. Optimizing the model was very time consuming and took a lot of exploring to really figure out a good configuration for the hyperparamters. Creating the mars-like environment was also very time-consuming and tedious, as there was a lot of debugging within the environment code like issues with the Pygame color rendering, for example. I also had some issues with Matplotlib and X11 Forwarding, and had to settle with a VNC Viewer instead because SSH sessions were headless and caused backend errors on VS Code. My greatest triumphs were being persistent through all of these struggles and completing modifications such as the Mars environment, Human vs AI Functionality, and the Sliders.
+
+Key Topics I learned about: The key topics I learned during this project include reinforcement learning fundamentals like Q-learning and DQN architectures, environment customization in Gymnasium with Box2D physics for gravity and wind simulation, hyperparameter tuning for the AI Model, and the use of Matplotlib for graphs and the GUI Development that was used for the sliders. I also gained experience with Stable Baselines3 for model training and evaluation. Overall, in general, I gained a lot of software experience through this project.
+
+What I hope to learn in the future after everything I've learned at BSE: I want to expand on my understanding of the DQN Model and see what type of real world applications I can apply it to. Additionally, I want to learn more about other AI models and RL Techniques like PPO or SAC and explore multi-agent RL for scenarios like the Lunar Lander and other real world applications. There is so much that I can build off of from this great experience at BlueStamp.
+
+# Final Milestone Code
+Here is link to see the code for my entire project, including all the modifications done during this milestone.
+<a href="https://github.com/sidharthshyam/lunar_lander"> Link </a>
 
 # Second Milestone
 

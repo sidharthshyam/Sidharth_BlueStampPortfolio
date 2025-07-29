@@ -1,12 +1,6 @@
 # Lunar Lander Reinforcement Learning
 This project is a reinforcement learning system using a Deep Q-Network (DQN) model that trains a spacecraft to land in a given Gymnasium environment. I started with the standard Lunar Lander environment but modified it to simulate Mars-like conditions with weaker gravity at -3.71 m/s², moderate wind power for dust storms, rougher terrain, and Mars-like colors. I also added a human vs AI functionality where a user can play against the agent and try to win, as well as sliders that allow the user to customize an environment’s gravity and wind power to see how the model performs under different conditions. Through this project, I gained deep insights into RL hyperparameters, environment customization, and GUI integration, inspiring me to explore advanced techniques like multi-agent systems for future space exploration AI. 
 
-
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Sidharth S | Skyline High School | Computer Science and AI/ML | Rising Sophomore |

@@ -1,5 +1,5 @@
 # Lunar Lander Reinforcement Learning
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+This project is a reinforcement learning system using a Deep Q-Network (DQN) model that trains a spacecraft to land in a given Gymnasium environment. I started with the standard Lunar Lander environment but modified it to simulate Mars-like conditions with weaker gravity at -3.71 m/s², moderate wind power for dust storms, rougher terrain, and Mars-like colors. I also added a human vs AI functionality where a user can play against the agent and try to win, as well as sliders that allow the user to customize an environment’s gravity and wind power to see how the model performs under different conditions. Through this project, I gained deep insights into RL hyperparameters, environment customization, and GUI integration, inspiring me to explore advanced techniques like multi-agent systems for future space exploration AI. 
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
@@ -17,9 +17,7 @@ You should comment out all portions of your portfolio that you have not complete
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ud03IRiQ_f0?si=0etjGS8OP72odx-D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uDimMJNdWt4?si=SADMRHh9dwZd_DpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For Milestone 3, I enhanced the Lunar Lander project by creating a Mars-like environment, implementing human vs AI functionality, and adding interactive sliders for gravity and wind power. The Mars environment was developed by copying and modifying the original Lunar Lander code from Gymnasium's Box2D module into mars_lander.py. I removed the gravity assertion to allow Mars' weaker value of -3.71 m/s², enabled wind with moderate power (10.0) and turbulence (1.0) for dust storms, and adjusted rendering for reddish-orange terrain colors using Pygame RGB tuples like (180, 80, 40) for the ground fill and moon edges. These changes make the environment more realistic, with slower falls and drifting due to low gravity/wind, registered as 'MarsLander-v0' for easy use.
 
@@ -36,7 +34,6 @@ Here is link to see the code for my entire project, including all the modificati
 <a href="https://github.com/sidharthshyam/lunar_lander"> Link </a>
 
 # Second Milestone
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ODmsfNxn-ZA?si=vFSmYqU-ojKt6ScV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -164,7 +161,6 @@ print("  • Heatmap: hyperparam_reward_heatmap.png")
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ud03IRiQ_f0?si=0etjGS8OP72odx-D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 I achieved my first milestone by setting up remote access from my computer to the Raspberry Pi using Raspberry Pi Imager and a USB card reader, allowing me to SSH into the Pi and begin development. After establishing the SSH connection, I created a virtual environment to manage dependencies cleanly, and organized the necessary folders and Python files for the project. A key part of this milestone was gaining a solid understanding of the codebase—specifically, the purpose of each import, how the LunarLander-v3 game environment is initialized, and how the neural network and training loop are structured using the DQN algorithm. Once I grasped these core components, I ensured that the video recording functionality for the lunar lander simulation and the training progress graph both worked correctly. Although the initial model was not fully optimized and the lander frequently crashed, this step confirmed that the full training pipeline was functional and ready for further improvement.
 
@@ -330,9 +326,6 @@ plt.close()  # Clean up
 ```
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
-
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Raspberry Pi kit | Acts as the main computer that is running the project and runs the Python and Reinforcement Learning Framework | $96.99 | <a href="https://www.amazon.com/RasTech-Raspberry-Starter-Heatsink-Screwdriver/dp/B0C8LV6VNZ/ref=sr_1_4?crid=3506HY00MCGVM&dib=eyJ2IjoiMSJ9._zkM62vSQ8p7tNr88715LdMv_qHh72Je-tkF9PXEa3chDE53QT4aZu4AGAb4ihE61QY4ZD55nKF6Fp2Kfs8t7AbafM_JrlJFfHo9OB4eAVGqa0EB-7aoBQHPmhKHZ2MW8ny-Kd44bMVlVxPlTWVk5YHIN5P3uKVqrE5Dcal0rKkHny-O6Xyb5ux2AOU6OwVbkag_bqBX66RQNRrgBuz-0pS43mcx93IZTQA9R8NaJJypYU2HAycp-XicTFmyU60a01Nfm9iuyo6B9yA8ppN3OQQyJ-NQ9xyNPxfTLwkqtng.yAYpU6outhQcZmOZhN9Wb6yTw7A85CNUbXZguGInZNg&dib_tag=se&keywords=raspberry%2Bpi%2Bkit&qid=1718848547&s=electronics&sprefix=rasbperry%2Bpi%2Bkit%2Celectronics%2C83&sr=1-4&th=1"> Link </a> |

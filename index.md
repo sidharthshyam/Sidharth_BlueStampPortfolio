@@ -3,7 +3,7 @@ This project is a reinforcement learning system using a Deep Q-Network (DQN) mod
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Sidharth S | Skyline High School | Computer Science and AI/ML | Rising Sophomore |
+| Sidharth S | Skyline High School | Computer Science and AI/ML | Rising Junior |
 
   
 # Final Milestone
